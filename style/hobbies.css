@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Styling for common elements */
+body {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    background: linear-gradient(135deg, #F9F5F2, #FDE8C8);
+    font-family: Arial, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px 0;
+}
+
+.header_nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.header_nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header_nav a {
+    transition: color 0.3s;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header_nav a:hover {
+    color: #4A7C59;
+    background-color: #FDE8C8;
+}
+
+.header_humberger{
+	display: none;
+}
+
+.hobbies h1 {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #073B4C;
+ }
+ 
+ .hobby-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+ }
+ 
+ .hobby {
+    position: relative;
+    overflow: hidden; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.hobby-content {
+    position: relative; 
+}
+
+.hobby video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.story {
+    display: none; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 10px; 
+    border-radius: 8px; 
+    width: 80%; 
+}
+
+.hobby:hover .story {
+    display: block; 
+}
+ 
+ .hobby h2 {
+	margin-top: 10px;
+	color: #333;
+	font-size: 24px;
+ }
+
+ .hobby {
+	text-align: center;
+	margin-bottom: 20px; 
+ }
+ 
+ .hobby p {
+	font-size: 16px; 
+	color: #666; 
+	margin-top: 10px; 
+	max-width: 300px; 
+	line-height: 1.5; 
+ }
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: rgba(0, 0, 0, 0.05); 
+	color: #333;
+	border-top: 2px solid #FDE8C8;
+ }
+ 
+ .footer_logo_text {
+	display: flex;
+	gap: 20px;
+	font-size: 16px;
+ }
+ 
+
+ @media (max-width: 550px){
+	.header_nav{
+		display: none;
+	}
+
+	.header_humberger{
+		display: block;
+	}
+ }

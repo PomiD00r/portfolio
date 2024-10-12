@@ -1,0 +1,141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Styling for common elements */
+body {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    background: linear-gradient(135deg, #F9F5F2, #FDE8C8);
+    font-family: Arial, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px 0;
+}
+
+.header_humberger{
+	display: none;
+}
+
+.header_nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.header_nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header_nav a {
+    transition: color 0.3s;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header_nav a:hover {
+    color: #4A7C59;
+    background-color: #FDE8C8;
+}
+.main_gallery{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.main_gallery_member{
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: transform 0.3s, background-color 0.3s;
+	padding: 20px;
+}
+
+.main_gallery_member:hover {
+	background-color: rgba(0, 0, 0, 0.15);
+	transform: scale(1.02);
+ }
+
+.members{
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_gallery img{
+	width: 100%;
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+.member h1, .member h2 {
+	margin: 10px 0;
+	font-weight: normal;
+ }
+
+ .member h2 {
+	font-size: 18px;
+	color: #777;
+ }
+
+ footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: rgba(0, 0, 0, 0.05); 
+	color: #333;
+	border-top: 2px solid #FDE8C8;
+ }
+ 
+ .footer_logo_text {
+	display: flex;
+	gap: 20px;
+	font-size: 16px;
+ }
+
+ @media (max-width: 540px){
+	.header_nav{
+		display: none;
+	}
+	.header_humberger{
+		display: block;
+	}
+ }
+ 
